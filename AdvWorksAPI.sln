@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32519.379
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdvWorksAPI", "AdvWorksAPI.csproj", "{5AD5F823-0193-4DCB-9589-3648E600031A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdvWorksAPI", "AdvWorksAPI.csproj", "{5AD5F823-0193-4DCB-9589-3648E600031A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdvWorksAPI.DataAccessEF6", "..\AdvWorksAPI.DataAccessEF6\AdvWorksAPI.DataAccessEF6.csproj", "{11A1EE0F-E77A-45C2-AFD4-1F2FFA0CC97D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{5AD5F823-0193-4DCB-9589-3648E600031A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5AD5F823-0193-4DCB-9589-3648E600031A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5AD5F823-0193-4DCB-9589-3648E600031A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11A1EE0F-E77A-45C2-AFD4-1F2FFA0CC97D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11A1EE0F-E77A-45C2-AFD4-1F2FFA0CC97D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11A1EE0F-E77A-45C2-AFD4-1F2FFA0CC97D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11A1EE0F-E77A-45C2-AFD4-1F2FFA0CC97D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
