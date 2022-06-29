@@ -1,4 +1,6 @@
 using AdvWorksAPI.DataAccessEF6;
+using AdvWorksAPI.DataAccessEF6.Data;
+using AdvWorksAPI.DTOs;
 using AdvWorksAPI.Interfaces;
 using AdvWorksAPI.Repositories;
 using Microsoft.AspNetCore.Builder;
@@ -22,8 +24,13 @@ namespace AdvWorksAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddScoped<AdventureWorksContext>();
+            services.AddScoped<AdventureWorksContext>(_ => new AdventureWorksContext(Configuration.GetConnectionString("AdventureWorksContext")));
             services.AddScoped<IProductRepository, ProductRepository>();
+
+            services.AddAutoMapper(opts =>
+            {
+                opts.CreateMap<Product, ProductDTO>().ReverseMap();
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

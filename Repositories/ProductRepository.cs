@@ -1,4 +1,5 @@
-﻿using AdvWorksAPI.DataAccessEF6;
+﻿using AdvWorksAPI.DataAccessEF6.Data;
+using AdvWorksAPI.DataAccessEF6;
 using AdvWorksAPI.Interfaces;
 using System.Collections.Generic;
 using System.Linq;
